@@ -1,0 +1,12 @@
+# ignore all proving key and verification key
+**.key
+# ignore all output of compile a zok file
+**.json
+!abi.json
+**.wtns
+**/witness
+bin
+.ipynb*
+pycrypto
+requirements.lock.txt
+.DS_Store

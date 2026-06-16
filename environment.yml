@@ -1,0 +1,9 @@
+name: ll-repro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.7          # conda pins the INTERPRETER (pip can't do this)
+  - pip=23.3.1
+  - pip:                   # installed via the env's pip automatically
+      - ZnaKes==0.1.1      # pinned; bare `pip install ZnaKes` floats to latest
+      - ed25519==1.5       # pinned; C-extension pkg — builds from source on arm64 (needs Xcode CLT)
